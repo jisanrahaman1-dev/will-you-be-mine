@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Will You Be Mine? ✨</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Background elements -->
+    <div class="stars"></div>
+    <div class="floating-hearts"></div>
+
+    <main class="container">
+        <!-- Landing Page -->
+        <section id="landing" class="section active">
+            <div class="landing-content">
+                <h1 class="title">✨ A Special Message ✨</h1>
+                <p class="subtitle">Click to continue...</p>
+                <button class="btn btn-primary" onclick="goToSection('countdown')">
+                    Open 💝
+                </button>
+            </div>
+        </section>
+
+        <!-- Countdown Section -->
+        <section id="countdown" class="section">
+            <div class="countdown-container">
+                <h2>A moment to remember...</h2>
+                <div class="countdown">
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="days">0</span>
+                        <span class="countdown-label">Days</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="hours">0</span>
+                        <span class="countdown-label">Hours</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="minutes">0</span>
+                        <span class="countdown-label">Minutes</span>
+                    </div>
+                    <div class="countdown-item">
+                        <span class="countdown-number" id="seconds">0</span>
+                        <span class="countdown-label">Seconds</span>
+                    </div>
+                </div>
+                <p class="countdown-text">Until I ask you the most important question of my life</p>
+                <button class="btn btn-primary" onclick="goToSection('message')">
+                    Continue 💕
+                </button>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section id="message" class="section">
+            <div class="message-container">
+                <h2 class="message-title">My Love...</h2>
+                <div class="message-box">
+                    <p class="message-text">
+                        From the moment I met you, my heart knew it had found its home. 
+                        Every day with you feels like a beautiful dream, and I never want it to end.
+                    </p>
+                    <p class="message-text">
+                        You are my greatest adventure, my favorite song, my safe place. 
+                        You make ordinary moments extraordinary, and I fall in love with you more deeply with each passing day.
+                    </p>
+                    <p class="message-text highlight">
+                        "In all the world, there is no heart for me like yours." 💕
+                    </p>
+                </div>
+                <button class="btn btn-primary" onclick="goToSection('memories')">
+                    Tell me more 💫
+                </button>
+            </div>
+        </section>
+
+        <!-- Memories/Inside Jokes Section -->
+        <section id="memories" class="section">
+            <div class="memories-container">
+                <h2>Our Story... Our Inside Jokes 😄💕</h2>
+                <div class="memories-grid">
+                    <div class="memory-card">
+                        <h3>🧸 My Pet Name for You</h3>
+                        <p>You'll always be my special one, my love, my heart.</p>
+                        <p class="song-quote">"Your love is my favorite song"</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>🎵 Our Song</h3>
+                        <p>"I have fallen in love with you twice" - because every day I fall for you all over again</p>
+                        <p class="song-quote">"And I would do it all again if it meant being with you"</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>💝 Inside Joke #1</h3>
+                        <p>The silly moments we share make life worth living.</p>
+                        <p class="song-quote">"You make my heart smile"</p>
+                    </div>
+                    <div class="memory-card">
+                        <h3>😂 Inside Joke #2</h3>
+                        <p>Laughter with you is my favorite medicine.</p>
+                        <p class="song-quote">"Forever and always, you are enough"</p>
+                    </div>
+                </div>
+                <button class="btn btn-primary" onclick="goToSection('proposal')">
+                    The Big Question ✨
+                </button>
+            </div>
+        </section>
+
+        <!-- The Proposal Section -->
+        <section id="proposal" class="section">
+            <div class="proposal-container">
+                <div class="ring-animation">💍</div>
+                <h2 class="proposal-title">My Love...</h2>
+                <p class="proposal-text">There's something I've been wanting to ask you...</p>
+                
+                <div class="proposal-box">
+                    <h3 class="big-question">Will you marry me?</h3>
+                </div>
+
+                <div class="button-container">
+                    <button class="btn btn-yes" onclick="handleYes()">Yes! 💕</button>
+                    <button class="btn btn-maybe" onclick="handleMaybe()">Maybe... 🤔</button>
+                </div>
+
+                <div id="surprise" class="surprise-container hidden">
+                    <!-- Surprise content will be added here -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Celebration -->
+        <section id="celebration" class="section">
+            <div class="celebration-container">
+                <div class="confetti-container" id="confetti"></div>
+                <h2>You said YES! 🎉💕</h2>
+                <p class="celebration-text">I can't believe this is real! You've made me the happiest person in the world!</p>
+                <div class="heart-burst">
+                    💕 💍 💕
+                </div>
+                <p class="celebration-quote">"This is the beginning of the most beautiful chapter of our love story"</p>
+                <button class="btn btn-primary" onclick="location.reload()">
+                    Relive the Moment 💫
+                </button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
