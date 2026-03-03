@@ -2,7 +2,6 @@
 document.addEventListener('DOMContentLoaded', function() {
     createStars();
     createFloatingHearts();
-    startCountdown();
     addNavigationArrows();
 });
 
